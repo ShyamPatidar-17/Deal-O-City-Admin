@@ -6,7 +6,6 @@ import Navbar from '../components/Navbar';
 const Home = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-6">
-           <Navbar/>
       {/* Logo */}
       <div className="mb-10 text-center">
         <img src={assets.logo} alt="Deal-O-City Logo" className="h-20 mx-auto" />

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Home = () => {
   return (
     <div className="min-h-screen bg-white px-6 py-10 flex flex-col items-center text-center">
@@ -15,19 +14,25 @@ const Home = () => {
 
       {/* Action Buttons */}
       <div className="grid gap-6 sm:grid-cols-3 mb-12 w-full max-w-4xl">
-        <Link to="/add" className="flex flex-col items-center justify-center p-6 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl shadow-md transition-transform transform hover:scale-105">
-          <Plus size={36} />
-          <span className="mt-2 text-lg font-semibold">Add</span>
+        <Link
+          to="/add"
+          className="flex flex-col items-center justify-center p-6 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl shadow-md transition-transform transform hover:scale-105"
+        >
+          <span className="text-lg font-semibold">Add</span>
         </Link>
 
-        <Link to="/list" className="flex flex-col items-center justify-center p-6 bg-green-600 hover:bg-green-700 text-white rounded-2xl shadow-md transition-transform transform hover:scale-105">
-          <List size={36} />
-          <span className="mt-2 text-lg font-semibold">List</span>
+        <Link
+          to="/list"
+          className="flex flex-col items-center justify-center p-6 bg-green-600 hover:bg-green-700 text-white rounded-2xl shadow-md transition-transform transform hover:scale-105"
+        >
+          <span className="text-lg font-semibold">List</span>
         </Link>
 
-        <Link to="/orders" className="flex flex-col items-center justify-center p-6 bg-yellow-500 hover:bg-yellow-600 text-white rounded-2xl shadow-md transition-transform transform hover:scale-105">
-          <ClipboardList size={36} />
-          <span className="mt-2 text-lg font-semibold">Orders</span>
+        <Link
+          to="/orders"
+          className="flex flex-col items-center justify-center p-6 bg-yellow-500 hover:bg-yellow-600 text-white rounded-2xl shadow-md transition-transform transform hover:scale-105"
+        >
+          <span className="text-lg font-semibold">Orders</span>
         </Link>
       </div>
     </div>

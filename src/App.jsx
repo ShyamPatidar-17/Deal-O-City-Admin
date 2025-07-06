@@ -6,10 +6,12 @@ import Add from './pages/Add'
 import List from './pages/List'
 import Orders from './pages/Orders'
 import Login from './components/Login'
+import Home from './pages/Home'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL
+console.log(backendUrl);
 export const currency="$"
 
 const App = () => {
@@ -30,6 +32,7 @@ const App = () => {
             <Sidebar />
             <div className='w-[70%] mx-auto ml-[max(5vw,25px)] my-8 text-gray-600 text-base '>
               <Routes>
+                <Route path='/' element={<Home token={token} />} />
                 <Route path='/add' element={<Add token={token} />} />
                 <Route path='/list' element={<List token={token} />} />
                 <Route path='/orders' element={<Orders token={token} />} />
